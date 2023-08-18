@@ -2,6 +2,7 @@ package com.nopcommerce.pages;
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 public class HomePage extends BasePage{
 
@@ -9,7 +10,7 @@ public class HomePage extends BasePage{
     private By registerLink = By.xpath("//div[@class='header-links']//a[text()='Register']");
     private By loginLink = By.xpath("//div[@class='header-links']//a[text()='Log in']");
     private By logoutLink = By.xpath("//div[@class='header-links']//a[text()='Log out']");
-    private By booksLink = By.xpath("//div[@class='header-menu']//a[text()='Books '][1]");
+    private By booksLink = By.xpath("//div[@class='header-menu']//a[text()='Books ']");
     private By closeSuccessMsg = By.xpath("//span[@class='close']");
     private By shoppingCartLink = By.xpath("//div[@class='header-links']//a[text()='Shopping cart']");
 
@@ -40,7 +41,9 @@ public class HomePage extends BasePage{
     public BooksPage openBooksPage(){
         log.info("Open books page");
         waitUntilElementBeVisible(booksLink);
-        clickElement(booksLink);
+        WebElement item =  driver.findElements(booksLink).get(0);
+        clickOnElementByJavascript(item);
+        //clickElement(booksLink);
         return new BooksPage(driver);
     }
     @Step("Open cart page step...")
