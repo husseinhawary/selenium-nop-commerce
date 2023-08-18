@@ -26,6 +26,6 @@ public class LoginTests extends BaseTests{
         var logoutLinkValue = homePage.openLoginPage()
                .userLoginWithValidData(userEmail, jsonDataReaderObj.userPassword)
                .getLogoutLinkText();
-        Assert.assertEquals(logoutLinkValue, "LOG OUT", "Log out link is incorrect");
+        Assert.assertEquals(logoutLinkValue, "Log out", "Log out link is incorrect");
     }
 }
