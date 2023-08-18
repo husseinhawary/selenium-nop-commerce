@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Nop-Commerce Automation Task - demo.nopcommerce.com" verbose="5">
+    <test name="Chrome Nop-Commerce Automation Task">
+        <parameter name="browser" value="chrome-headless"></parameter>
+        <classes>
+            <class name="com.nopcommerce.RegisterTests"/>
+            <class name="com.nopcommerce.LoginTests"/>
+            <class name="com.nopcommerce.BooksTests"/>
+            <class name="com.nopcommerce.CheckoutTests"/>
+        </classes>
+    </test>
+</suite>
