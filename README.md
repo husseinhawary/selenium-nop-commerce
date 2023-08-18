@@ -41,7 +41,7 @@ allure serve allure-results
 ```
 
 ## GitHub Actions
-The project integrated with GitHub actions, and you can see the runs build and rerun again if you want, from here
+The project integrated with GitHub actions, and you can see the runs build and rerun again if you want, from the below link, but it's not stable.
 
 ```
 https://github.com/husseinhawary/selenium-nop-commerce/actions

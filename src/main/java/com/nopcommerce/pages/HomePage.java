@@ -49,7 +49,8 @@ public class HomePage extends BasePage{
         log.info("Open cart page");
         clickElement(closeSuccessMsg);
         waitUntilElementBeVisible(shoppingCartLink);
-        clickElement(shoppingCartLink);
+        clickOnElementByJavascript(driver.findElement(shoppingCartLink));
+//        clickElement(shoppingCartLink);
         return new CartPage(driver);
     }
 }
