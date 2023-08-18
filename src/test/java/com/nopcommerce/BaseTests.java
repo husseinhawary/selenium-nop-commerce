@@ -76,6 +76,7 @@ public class BaseTests {
         chromeOptions.addArguments("--disable-dev-shm-usage");
         chromeOptions.addArguments("--start-maximized");
         chromeOptions.addArguments("headless=new");
+        chromeOptions.addArguments("--window-size=1300,1000");
         return chromeOptions;
     }
 }
