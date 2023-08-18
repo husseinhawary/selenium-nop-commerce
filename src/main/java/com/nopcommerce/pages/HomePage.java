@@ -9,7 +9,7 @@ public class HomePage extends BasePage{
     private By registerLink = By.xpath("//div[@class='header-links']//a[text()='Register']");
     private By loginLink = By.xpath("//div[@class='header-links']//a[text()='Log in']");
     private By logoutLink = By.xpath("//div[@class='header-links']//a[text()='Log out']");
-    private By booksLink = By.xpath("//div[@class='header-links']//a[text()='Books']");
+    private By booksLink = By.xpath("//div[@class='header-menu']//a[text()='Books '][1]");
     private By closeSuccessMsg = By.xpath("//span[@class='close']");
     private By shoppingCartLink = By.xpath("//div[@class='header-links']//a[text()='Shopping cart']");
 
