@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 public class HomePage extends BasePage{
 
     // Locators V2
-    private By registerLink = By.linkText("Register");
+    private By registerLink = By.xpath("//div[@class='header-links']//a[text()='Register']");
     private By loginLink = By.linkText("Log in");
     private By logoutLink = By.linkText("Log out");
     private By booksLink = By.partialLinkText("Books");
