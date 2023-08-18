@@ -19,7 +19,7 @@ The following software are required:
 1. Clone the repo using below URL
 
 ```sh
-https://github.com/husseinhawary/
+https://github.com/husseinhawary/selenium-nop-commerce
 ```
 
 2. All project dependencies will be installed automatically from pom.xml file once you refresh it:
@@ -44,6 +44,6 @@ allure serve allure-results
 The project integrated with GitHub actions, and you can see the runs build and rerun again if you want, from here
 
 ```
-https://github.com/husseinhawary/
+https://github.com/husseinhawary/selenium-nop-commerce/actions
 ```
 
